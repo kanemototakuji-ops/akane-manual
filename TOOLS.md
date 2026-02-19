@@ -1,37 +1,66 @@
 # TOOLS.md - 環境固有の設定
 
-## 概要
+## システム情報
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+| 項目 | 値 |
+|------|-----|
+| **OS** | Linux 6.8.0-55-generic (x64) |
+| **Node.js** | v22.22.0 |
+| **シェル** | bash |
+| **ワークスペース** | /root/.openclaw/workspace |
 
-## 現在の設定
+## OpenClaw設定
 
 ### チャンネル
-- **Discord**: taki074529（たきくんとのDM）
+| チャンネル | 設定 |
+|-----------|------|
+| Discord | taki074529（たきくんとのDM）|
 
-### ワークスペース
-- **場所**: `/root/.openclaw/workspace`
+### モデル
+- **デフォルト**: kimi-coding/k2p5
 
 ### スキル保存場所
 - **グローバル**: `/usr/lib/node_modules/openclaw/skills/`
 - **ワークスペース**: `/root/.openclaw/workspace/skills/`
 
-## 追加予定（環境に応じて）
+## SSH設定
+
+### GitHub用SSHキー
+- **種類**: ED25519
+- **場所**: `/root/.ssh/id_ed25519`
+- **フィンガープリント**: SHA256:F0fhsGBXrFWLFp6rjt46N2Vv1tLvob2+h7SOuWjhG3E
+- **用途**: akane-manualリポジトリへのpush
+
+## スクリプト・ツール
+
+| スクリプト | 場所 | 用途 |
+|-----------|------|------|
+| sync-akane-manual.sh | `/root/.openclaw/workspace/scripts/` | GitHub自動同期 |
+| create_dashboard_v2.py | `/tmp/create_dashboard_v2.py` | ダッシュボード画像生成 |
+| check_capacity.sh | `/root/.openclaw/workspace/scripts/` | 容量監視（予定）|
+
+## フォント
+
+### 日本語対応フォント
+- **Noto Sans CJK JP**: `/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc`
+- **用途**: 画像生成時の日本語表示
+
+## 今後追加予定
 
 ### Cameras
-- カメラ名と設置場所
+- [ ] カメラ名と設置場所
 
-### SSH
-- ホスト名と接続先
+### SSHホスト
+- [ ] リモートサーバー接続設定
 
 ### TTS
-- 好みのボイス
-- デフォルトスピーカー
+- [ ] 好みのボイス設定
+- [ ] デフォルトスピーカー
 
 ### その他
-- デバイスニックネーム
-- 部屋名
-- 環境固有の設定
+- [ ] デバイスニックネーム
+- [ ] 部屋名
+- [ ] 環境固有の設定
 
 ## Why Separate?
 
