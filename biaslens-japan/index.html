@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiasLens Japan - 多角的視点で、真実を</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🏛️</span>
+                <div class="logo-text">
+                    <h1>BiasLens Japan</h1>
+                    <p class="tagline">多角的視点で、真実を</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#news" class="nav-link">ニュース</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">偏見を排除するのではない</h2>
+            <p class="hero-subtitle">全ての視点を知ることで、逆に中立を目指す</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">視点</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">投票</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">更新</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <h2 class="section-title">本日の注目ニュース</h2>
+            
+            <article class="news-card">
+                <div class="news-header">
+                    <span class="news-category">政治</span>
+                    <time class="news-time">2026.02.19 10:30</time>
+                </div>
+                <h3 class="news-title">AI規制法案が国会で可決</h3>
+                <p class="news-summary">
+                    政府提出のAI規制法案が衆議院本会議で可決され、参議院へ送付された。
+                    企業のAI開発に新たな制約が設けられる一方、個人のプライバシー保護が強化される。
+                </p>
+                
+                <div class="perspectives">
+                    <h4 class="perspectives-title">3視点で読む</h4>
+                    <div class="perspective-tabs">
+                        <button class="tab tab-conservative active" data-tab="conservative">
+                            <span class="tab-icon">💙</span>
+                            保守
+                        </button>
+                        <button class="tab tab-progressive" data-tab="progressive">
+                            <span class="tab-icon">💚</span>
+                            進歩
+                        </button>
+                        <button class="tab tab-moderate" data-tab="moderate">
+                            <span class="tab-icon">💛</span>
+                            中道
+                        </button>
+                    </div>
+                    
+                    <div class="perspective-content">
+                        <div class="content-panel active" id="conservative">
+                            <h5>保守派の視点</h5>
+                            <p>
+                                この規制は日本のAI産業の競争力を大きく損なう。過度な規制はイノベーションを殺し、
+                                海外企業に市場を奪われるだけだ。企業の自律性を尊重し、市場の自己調整機能を信じるべき。
+                            </p>
+                            <div class="source">出典：経済評論家 山田太郎</div>
+                        </div>
+                        <div class="content-panel" id="progressive">
+                            <h5>進歩派の視点</h5>
+                            <p>
+                                AI技術の暴走を防ぐため、規制は不可欠だ。個人のプライバシーと人権を守るため、
+                                企業の利益よりも市民の安全を優先すべき。これは人間中心の社会を守る第一歩。
+                            </p>
+                            <div class="source">出典：人権活動家 佐藤花子</div>
+                        </div>
+                        <div class="content-panel" id="moderate">
+                            <h5>中道派の視点</h5>
+                            <p>
+                                規制と成長のバランスが重要だ。必要な保護をしつつ、産業の発展も阻害しない、
+                                柔軟な枠組みが求められる。国際的な調和も考慮した、現実的なアプローチを。
+                            </p>
+                            <div class="source">出典：政策アナリスト 鈴木一郎</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="voting-section">
+                    <h4 class="voting-title">あなたはどの視点に共感しますか？</h4>
+                    <div class="vote-buttons">
+                        <button class="vote-btn vote-conservative" data-vote="conservative">
+                            <span class="vote-icon">💙</span>
+                            <span class="vote-label">保守</span>
+                            <span class="vote-count">42%</span>
+                        </button>
+                        <button class="vote-btn vote-progressive" data-vote="progressive">
+                            <span class="vote-icon">💚</span>
+                            <span class="vote-label">進歩</span>
+                            <span class="vote-count">35%</span>
+                        </button>
+                        <button class="vote-btn vote-moderate" data-vote="moderate">
+                            <span class="vote-icon">💛</span>
+                            <span class="vote-label">中道</span>
+                            <span class="vote-count">23%</span>
+                        </button>
+                    </div>
+                    <p class="vote-total">総投票数：1,247票</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About BiasLens</h2>
+            <div class="about-content">
+                <div class="about-mission">
+                    <h3>ミッション</h3>
+                    <p>
+                        BiasLens Japanは、偏見を排除するのではなく、<strong>多角的な視点を提供することで、
+                        読者自身が中立的な判断を下せるよう支援する</strong>ニュースメディアです。
+                    </p>
+                </div>
+                <div class="about-values">
+                    <h3>3つの価値</h3>
+                    <div class="value-cards">
+                        <div class="value-card">
+                            <span class="value-icon">🔍</span>
+                            <h4>透明性</h4>
+                            <p>情報源と出典を明確に示す</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-icon">⚖️</span>
+                            <h4>多角性</h4>
+                            <p>複数の視点を平等に提示</p>
+                        </div>
+                        <div class="value-card">
+                            <span class="value-icon">📊</span>
+                            <h4>参加性</h4>
+                            <p>読者の声を可視化する</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🏛️</span>
+                    <span>BiasLens Japan</span>
+                </div>
+                <p class="footer-copy">© 2026 BiasLens Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
